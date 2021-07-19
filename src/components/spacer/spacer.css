@@ -1,0 +1,9 @@
+.spacer{
+
+    width: 50%;
+    height: 3px;
+    background: #2980B9;
+    box-shadow: 0px 0px 6px 1px rgb(93 173 226 / 70%);
+     margin: 1rem auto;
+
+}

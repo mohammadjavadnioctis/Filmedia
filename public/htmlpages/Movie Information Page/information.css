@@ -1,0 +1,334 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+body h1{
+    /* text-align: center; */
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+
+}
+.spacer{
+
+    width: 50%;
+    height: 3px;
+    background: #2980B9;
+    box-shadow: 0px 0px 6px 1px rgb(93 173 226 / 70%);
+     margin: 1rem auto;
+
+}
+span{
+    color: #2980B9;
+    
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #2980b9, 0 0 0.5em #2980b9, 0 0 0.1em #2980b9, 0 10px 3px #000;
+}
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header,
+.heroimg {
+    background: 50% 50% / cover;
+}
+
+.heroimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    /* background: url(HERO.jpeg); */
+    background-size: 70% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2) translateX(-58%);
+     z-index: -1;
+    min-height: 100vh;
+    background-color: #151515;
+    /* background: linear-gradient(to right,#181818 10%,rgba(23,23,23,.98) 20%,rgba(23,23,23,.97) 25%,rgba(23,23,23,.95) 35%,rgba(23,23,23,.94) 40%,rgba(23,23,23,.92) 45%,rgba(23,23,23,.9) 50%,rgba(23,23,23,.87) 55%,rgba(23,23,23,.82) 60%,rgba(23,23,23,.75) 65%,rgba(23,23,23,.63) 70%,rgba(23,23,23,.45) 75%,rgba(23,23,23,.27) 80%,rgba(23,23,23,.15) 85%,rgba(23,23,23,.08) 90%,rgba(23,23,23,.03) 95%,rgba(23,23,23,0) 100%); */
+}
+
+
+
+
+.iframe-container{
+    position: absolute;
+    width: 70%;
+    
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2) translateX(30%);
+    z-index: 1;
+    min-height: 100vh;
+    /* position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0; */
+}
+
+.iframe-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#main-trailer{
+    width: 70%;
+    position: relative;
+   
+    height: 100%;
+    z-index: 999;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+}
+
+
+
+
+
+
+
+
+.overview{
+    transform: translateZ(-1px) scale(2) translateX(-58%);
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    width: 30%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #121212;
+    /* background: linear-gradient(to right,#181818 10%
+    ,rgba(23,23,23,.98) 30%,
+    rgba(23,23,23,.97) 35%,
+    rgba(23,23,23,.95) 45%,
+    rgba(23,23,23,.94) 50%,
+    rgba(23,23,23,.92) 55%,
+    rgba(23,23,23,.9) 60%,
+    rgba(23,23,23,.87) 65%,
+    rgba(23,23,23,.82) 70%,
+    rgba(23,23,23,.75) 75%,
+    rgba(23,23,23,.63) 80%,
+    rgba(23,23,23,.45) 100%,
+    rgba(23,23,23,.27) 90%,
+    rgba(23,23,23,.15) 95%,
+    rgba(23,23,23,.08) 90%,
+    rgba(23,23,23,.03) 95%,
+    rgba(23,23,23,0) 100%); */
+    /* background-color: #121212; */
+    /* background: linear-gradient(to right,#181818 10% ,rgba(23,23,23,.98) 80%, rgba(23,23,23,.97) 82%, rgba(23,23,23,.95) 85%, rgba(23,23,23,.94) 86%, rgba(23,23,23,.92) 90%, rgba(23,23,23,.9) 100%); */
+    box-shadow: 0px 0px 100px 112px #121212;
+}
+
+.overview-child1, .overview-child2{
+    /* border: 3px solid orange; */
+    min-width: 20%;
+    max-width: 50%;
+    height: 50%;
+    padding-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.overview-child2{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.arrow{
+    max-width: 50px;
+    position: absolute;
+    bottom: 8vh;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: float 1s linear infinite;
+}
+
+
+
+@keyframes float {
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+         transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+    
+}
+
+
+
+.container {
+    
+    border: 3px solid orange;
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+    top: 100vh;
+    background-position: fixed;
+    line-height: 30px;
+    font-weight: lighter;
+    padding: 40px;
+    
+    box-shadow: 0px 0px 20px #121212;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.container p {
+    color: #ddd;
+
+}
+.content{
+    max-width: 1100px;
+    background-color: rgba(34, 37, 75, 0.91);
+    margin: auto;
+    padding: 2rem;
+}
+.content h1 {
+    text-align: center;
+}
+
+
+.content p, .movie-summary-p{
+    max-width: 60%;
+
+}
+.movie-summary-p{
+   
+    width: 80%;
+    margin: 0 auto 9rem auto;
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    line-height: 2.2rem;
+    color: #ddd;
+    
+}
+
+.p-icons{
+    max-width: 100%;
+    background-color : #2980B9;
+    box-shadow: 0px 0px 6px 1px rgb(93 173 226 / 70%);
+    margin-top: 4rem;
+
+}
+
+.picon{
+    max-width: 40px;
+    margin: 10px;
+}
+
+
+
+.film-konusu{
+    text-align: center;
+}
+
+
+
+/* simillar section  start*/
+
+#similar-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie {
+    background-color: #373b69;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    width: 300px;
+    cursor: pointer;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie-info {
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+    margin: 0;
+}
+
+.movie-info span {
+    background-color: #22254b;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+}
+.movie-info span.green {
+    color: rgb(39, 189, 39);
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: rgb(189, 42, 42);
+}
+
+/* simillar section  end*/
