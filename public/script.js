@@ -203,161 +203,161 @@ navSlider.controller.control = mainSlider;
 
 //image wall functionality start
 
-const NUM_ROWS = 3;
-const NUM_IMAGES = 3;
-const IMAGES = [
-'./assets/Images/Guardians-Galaxy-3.jpg',
-'./assets/Images/harley quinn fig.gif',
-'./assets/Images/birds-of-prey.jpg', 
-'./assets/Images/Terminal_2018-min.jpg',
-'./assets/Images/joker glitching.gif',
-'./assets/Images/kartoon harley quinn.png',
-'./assets/Images/suicide squad 2016.jpg',
-'./assets/Images/margarot robbie.jpg',
-'./assets/Images/suicide squad 2021.jpg',
-'./assets/Images/terminal second wallpaper.jpg',
+// const NUM_ROWS = 3;
+// const NUM_IMAGES = 3;
+// const IMAGES = [
+// './assets/Images/Guardians-Galaxy-3.jpg',
+// './assets/Images/harley quinn fig.gif',
+// './assets/Images/birds-of-prey.jpg', 
+// './assets/Images/Terminal_2018-min.jpg',
+// './assets/Images/joker glitching.gif',
+// './assets/Images/kartoon harley quinn.png',
+// './assets/Images/suicide squad 2016.jpg',
+// './assets/Images/margarot robbie.jpg',
+// './assets/Images/suicide squad 2021.jpg',
+// './assets/Images/terminal second wallpaper.jpg',
 
-'./assets/Images/Guardians-Galaxy-3.jpg',
-'./assets/Images/Mary Queen of Scots.jpg',
-'./assets/Images/birds-of-prey.jpg', 
-'./assets/Images/Terminal_2018-min.jpg',
-'./assets/Images/suiceide squad skulls gif.gif',
-'./assets/Images/kartoon harley quinn.png',
-'./assets/Images/suicide squad 2016.jpg',
-'./assets/Images/margarot robbie.jpg',
-'./assets/Images/suicide squad 2021.jpg',
-'./assets/Images/terminal second wallpaper.jpg',
+// './assets/Images/Guardians-Galaxy-3.jpg',
+// './assets/Images/Mary Queen of Scots.jpg',
+// './assets/Images/birds-of-prey.jpg', 
+// './assets/Images/Terminal_2018-min.jpg',
+// './assets/Images/suiceide squad skulls gif.gif',
+// './assets/Images/kartoon harley quinn.png',
+// './assets/Images/suicide squad 2016.jpg',
+// './assets/Images/margarot robbie.jpg',
+// './assets/Images/suicide squad 2021.jpg',
+// './assets/Images/terminal second wallpaper.jpg',
 
-'./assets/Images/Guardians-Galaxy-3.jpg',
-'./assets/Images/Mary Queen of Scots.jpg',
-'./assets/Images/birds-of-prey.jpg', 
-'./assets/Images/Terminal_2018-min.jpg',
-'./assets/Images/joker glitching.gif',
-'./assets/Images/kartoon harley quinn.png',
-'./assets/Images/suicide squad 2016.jpg',
-'./assets/Images/margarot robbie.jpg',
-'./assets/Images/suicide squad 2021.jpg',
-'./assets/Images/terminal second wallpaper.jpg',
+// './assets/Images/Guardians-Galaxy-3.jpg',
+// './assets/Images/Mary Queen of Scots.jpg',
+// './assets/Images/birds-of-prey.jpg', 
+// './assets/Images/Terminal_2018-min.jpg',
+// './assets/Images/joker glitching.gif',
+// './assets/Images/kartoon harley quinn.png',
+// './assets/Images/suicide squad 2016.jpg',
+// './assets/Images/margarot robbie.jpg',
+// './assets/Images/suicide squad 2021.jpg',
+// './assets/Images/terminal second wallpaper.jpg',
 
-'./assets/Images/Guardians-Galaxy-3.jpg',
-'./assets/Images/Mary Queen of Scots.jpg',
-'./assets/Images/birds-of-prey.jpg', 
-'./assets/Images/Terminal_2018-min.jpg',
-'./assets/Images/joker glitching.gif',
-'./assets/Images/kartoon harley quinn.png',
-'./assets/Images/suicide squad 2016.jpg',
-'./assets/Images/margarot robbie.jpg',
-'./assets/Images/suicide squad 2021.jpg',
-'./assets/Images/terminal second wallpaper.jpg',
+// './assets/Images/Guardians-Galaxy-3.jpg',
+// './assets/Images/Mary Queen of Scots.jpg',
+// './assets/Images/birds-of-prey.jpg', 
+// './assets/Images/Terminal_2018-min.jpg',
+// './assets/Images/joker glitching.gif',
+// './assets/Images/kartoon harley quinn.png',
+// './assets/Images/suicide squad 2016.jpg',
+// './assets/Images/margarot robbie.jpg',
+// './assets/Images/suicide squad 2021.jpg',
+// './assets/Images/terminal second wallpaper.jpg',
 
-'./assets/Images/Guardians-Galaxy-3.jpg',
-'./assets/Images/Mary Queen of Scots.jpg',
-'./assets/Images/birds-of-prey.jpg', 
-'./assets/Images/Terminal_2018-min.jpg',
-'./assets/Images/joker glitching.gif',
-'./assets/Images/kartoon harley quinn.png',
-'./assets/Images/suicide squad 2016.jpg',
-'./assets/Images/margarot robbie.jpg',
-'./assets/Images/suicide squad 2021.jpg',
-'./assets/Images/terminal second wallpaper.jpg',
+// './assets/Images/Guardians-Galaxy-3.jpg',
+// './assets/Images/Mary Queen of Scots.jpg',
+// './assets/Images/birds-of-prey.jpg', 
+// './assets/Images/Terminal_2018-min.jpg',
+// './assets/Images/joker glitching.gif',
+// './assets/Images/kartoon harley quinn.png',
+// './assets/Images/suicide squad 2016.jpg',
+// './assets/Images/margarot robbie.jpg',
+// './assets/Images/suicide squad 2021.jpg',
+// './assets/Images/terminal second wallpaper.jpg',
 
-'./assets/Images/Guardians-Galaxy-3.jpg',
-'./assets/Images/Mary Queen of Scots.jpg',
-'./assets/Images/birds-of-prey.jpg', 
-'./assets/Images/Terminal_2018-min.jpg',
-'./assets/Images/joker glitching.gif',
-'./assets/Images/kartoon harley quinn.png',
-'./assets/Images/suicide squad 2016.jpg',
-'./assets/Images/margarot robbie.jpg',
-'./assets/Images/suicide squad 2021.jpg',
-'./assets/Images/terminal second wallpaper.jpg',
-
-
-
-];
+// './assets/Images/Guardians-Galaxy-3.jpg',
+// './assets/Images/Mary Queen of Scots.jpg',
+// './assets/Images/birds-of-prey.jpg', 
+// './assets/Images/Terminal_2018-min.jpg',
+// './assets/Images/joker glitching.gif',
+// './assets/Images/kartoon harley quinn.png',
+// './assets/Images/suicide squad 2016.jpg',
+// './assets/Images/margarot robbie.jpg',
+// './assets/Images/suicide squad 2021.jpg',
+// './assets/Images/terminal second wallpaper.jpg',
 
 
+
+// ];
 
 
 
 
-// for (let i = 0; i < NUM_IMAGES; i++) {
-//   let width = (Math.floor(Math.random() * 3) + 2) * 100;
-//   let height = (Math.floor(Math.random() * 3) + 2) * 100;
-//   IMAGES.push(`http://unsplash.it/${width}/${height}`);
+
+
+// // for (let i = 0; i < NUM_IMAGES; i++) {
+// //   let width = (Math.floor(Math.random() * 3) + 2) * 100;
+// //   let height = (Math.floor(Math.random() * 3) + 2) * 100;
+// //   IMAGES.push(`http://unsplash.it/${width}/${height}`);
+// // }
+
+// let rows = [];
+// for (let i = 0; i < NUM_ROWS; i++) {
+//   let row = document.createElement('div');
+//   row.classList.add('row');
+//   rows.push(row);
 // }
 
-let rows = [];
-for (let i = 0; i < NUM_ROWS; i++) {
-  let row = document.createElement('div');
-  row.classList.add('row');
-  rows.push(row);
-}
+// let wall = document.getElementById('wall');
+// for (let i = 0; i < IMAGES.length; i++) {
+//   let index = i % rows.length;
+//   let row = rows[index];
+//   // console.log('this is a row', row)
+//   let onBottomRow = index === rows.length - 1;
+//   if (onBottomRow) {
+//     let frame = document.createElement('div');
+//     frame.classList.add('frame');
+//     frame.innerHTML = `
+//       <img src="${IMAGES[i]}">
+//       <div class="reflection">
+//         <img src="${IMAGES[i]}">
+//       </div>
+//     `;
+//     row.appendChild(frame);
+//   } else {
+//     let img = document.createElement('img');
+//     img.src = IMAGES[i];
+//     row.appendChild(img);
+//   }
+// }
 
-let wall = document.getElementById('wall');
-for (let i = 0; i < IMAGES.length; i++) {
-  let index = i % rows.length;
-  let row = rows[index];
-  console.log('this is a row', row)
-  let onBottomRow = index === rows.length - 1;
-  if (onBottomRow) {
-    let frame = document.createElement('div');
-    frame.classList.add('frame');
-    frame.innerHTML = `
-      <img src="${IMAGES[i]}">
-      <div class="reflection">
-        <img src="${IMAGES[i]}">
-      </div>
-    `;
-    row.appendChild(frame);
-  } else {
-    let img = document.createElement('img');
-    img.src = IMAGES[i];
-    row.appendChild(img);
-  }
-}
+// rows.forEach(row => {
+//   wall.appendChild(row);
+// });
 
-rows.forEach(row => {
-  wall.appendChild(row);
-});
+// let debounce = (func, wait, immediate) => {
+//   var timeout;
+//   return function () {
+//     var context = this,args = arguments;
+//     var later = function () {
+//       timeout = null;
+//       if (!immediate) func.apply(context, args);
+//     };
+//     var callNow = immediate && !timeout;
+//     clearTimeout(timeout);
+//     timeout = setTimeout(later, wait);
+//     if (callNow) func.apply(context, args);
+//   };
+// };
 
-let debounce = (func, wait, immediate) => {
-  var timeout;
-  return function () {
-    var context = this,args = arguments;
-    var later = function () {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    var callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
-  };
-};
-
-let scrollPosition = 0;
-let scrollWall = debounce(event => {
-  scrollPosition -= event.deltaY;
-  wall.style.transform = `rotateY(45deg) translateX(${scrollPosition}px)`;
-}, 10);
+// let scrollPosition = 0;
+// let scrollWall = debounce(event => {
+//   // scrollPosition -= event.deltaY;
+//   // wall.style.transform = `rotateY(45deg) translateX(${scrollPosition}px)`;
+// }, 10);
 
 
-const wallEl = document.querySelector('.wall-container')
+// const wallEl = document.querySelector('.wall-container')
 
-const options = []
-const observer = new IntersectionObserver(function (entries, observer) {
-  entries.forEach(entry => {
-    if (entry.isIntersecting){
-      window.addEventListener('wheel',(event) => {scrollWall(event)});
-    }
-  })
-}
-)
+// const options = []
+// const observer = new IntersectionObserver(function (entries, observer) {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting){
+//       window.addEventListener('wheel',(event) => {scrollWall(event)});
+//     }
+//   })
+// }
+// )
 
-observer.observe(wallEl)
+// observer.observe(wallEl)
 
 
 
 
-//image wall functionality end
+// //image wall functionality end

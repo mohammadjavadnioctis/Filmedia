@@ -45,9 +45,9 @@ let slides = [];
     fetch( MOVIEAPIURL)
     .then( res => res.json() )
     .then( data =>{
-     console.log(data)
+    //  console.log(data)
       // slides = data.results
-     
+     console.log(data)
       setMovieArray( data.results )
       
     } )
@@ -77,7 +77,9 @@ let slides = [];
     
   <Swiper className={`mySwiper swiper-container-h ${styles.swiperContainer}`}
    slidesPerView = {4}
-   autoplay={{"delay": 2500,"disableOnInteraction": true}} 
+  //  autoplay={
+  //    {"delay": 2500,"disableOnInteraction": true}
+  //   } 
    navigation
    spaceBetween={50}
    pagination={
