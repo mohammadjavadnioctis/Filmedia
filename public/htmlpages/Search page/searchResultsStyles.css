@@ -13,7 +13,6 @@ body{
 
 .search-results-container{
     width: 80%;
-    border: 3px solid yellow;
     margin: 0 auto;
 
 }
@@ -43,7 +42,6 @@ header {
     max-width: 1200px;
     margin: auto;
     overflow: auto;
-    border: 3px solid yellow;
 
 }
 .search {
