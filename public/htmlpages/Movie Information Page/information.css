@@ -133,7 +133,7 @@ header,
 
 
 .overview{
-    transform: translateZ(-1px) scale(2) translateX(-58%);
+    /* transform: translateZ(-1px) scale(2) translateX(-58%); */
     position: relative;
     z-index: 2;
     height: 100%;
